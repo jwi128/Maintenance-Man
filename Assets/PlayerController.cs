@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
     void SetFocus(Interactable newFocus)
     {
         focus = newFocus;
+        motor.MoveToPoint(newFocus.transform.position);
     }
 
     void RemoveFocus()
